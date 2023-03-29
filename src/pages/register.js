@@ -27,29 +27,29 @@ const register = () => {
         <input
           type="text"
           className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
-          placeholder="First Name"
-        />
-
-        <input
-          type="text"
-          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
-          placeholder="Last Name"
-        />
-
-        <input
-          type="email"
-          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
-          placeholder="E-Mail Address"
+          placeholder="Name"
         />
 
         <input
           type="number"
           className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
-          placeholder="Phone Number"
+          placeholder="Employee Id Number"
         />
-        <Link href="/employeeConfirmation" className="w-full lg:w-[30rem]">
+
+        <input
+          type="password"
+          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
+          placeholder="Password"
+        />
+
+        <input
+          type="password"
+          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
+          placeholder="Confirm Password"
+        />
+        <Link href="/userhome" className="w-full lg:w-[30rem]">
           <button className="bg-gray-300 border-2 border-gray-400 rounded-lg p-3 w-full lg:w-[30rem]">
-            Next
+            Register
           </button>
         </Link>
       </main>
