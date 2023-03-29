@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 
-const ticket = () => {
+const Ticket = () => {
   const { ticket } = useRouter().query;
   const data = dataSet[ticket - 1];
   console.log(data?.id);
@@ -19,7 +19,7 @@ const ticket = () => {
       </Head>
       <PageLayout url="userhome" text="Order Successful">
         <div>
-          <p>Here's your Meal Ticket</p>
+          <p>Here is your Meal Ticket</p>
           <Image
             src={`/${data?.src}`}
             alt="ordered meal"
@@ -32,4 +32,4 @@ const ticket = () => {
     </>
   );
 };
-export default ticket;
+export default Ticket;
