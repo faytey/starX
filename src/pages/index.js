@@ -35,13 +35,16 @@ export default function Home() {
             priority
           />
         </div>
-
-        <button className="bg-green-600 p-3 text-white rounded-lg w-full lg:w-[30rem]">
-          <Link href="/login">Login</Link>
-        </button>
-        <button className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]">
-          <Link href="/register">Register</Link>
-        </button>
+        <Link href="/login" className="w-full">
+          <button className="bg-green-600 p-3 text-white rounded-lg w-full lg:w-[30rem]">
+            Login
+          </button>
+        </Link>
+        <Link href="/register" className="w-full">
+          <button className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]">
+            Register
+          </button>
+        </Link>
       </main>
     </>
   );

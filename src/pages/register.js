@@ -47,10 +47,11 @@ const register = () => {
           className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
           placeholder="Phone Number"
         />
-
-        <button className="bg-gray-300 border-2 border-gray-400 rounded-lg p-3 w-full lg:w-[30rem]">
-          <Link href="/employeeConfirmation">Next</Link>
-        </button>
+        <Link href="/employeeConfirmation" className="w-full">
+          <button className="bg-gray-300 border-2 border-gray-400 rounded-lg p-3 w-full lg:w-[30rem]">
+            Next
+          </button>
+        </Link>
       </main>
     </>
   );

@@ -3,14 +3,11 @@ import Link from "next/link";
 import React from "react";
 
 export const Navbar = () => {
-  //   const active = () => {
-  //     return { cla };
-  //   };
   return (
-    <div className="flex justify-between mb-0 mt-[100%] items-center lg:w-[30rem] fixed">
-      <Link href="/kitchen">
+    <div className="flex justify-between mt-[100%] items-center lg:w-[30rem] fixed bottom-0">
+      <Link href="/userhome">
         <Image
-          className="mr-4"
+          className="mr-4 focus:bg-grey-400"
           src="./Frame 13.svg"
           alt="home button"
           width={65}
