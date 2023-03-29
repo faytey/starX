@@ -44,7 +44,7 @@ const login = () => {
           className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
           placeholder="Password"
         />
-        <Link href="/userhome" className="w-full">
+        <Link href="/userhome" className="w-full lg:w-[30rem]">
           <button className="bg-gray-300 border-2 border-gray-400 rounded-lg p-3 w-full lg:w-[30rem]">
             Login
           </button>

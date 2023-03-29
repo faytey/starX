@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -35,13 +35,13 @@ export default function Home() {
             priority
           />
         </div>
-        <Link href="/login" className="w-full">
-          <button className="bg-green-600 p-3 text-white rounded-lg w-full lg:w-[30rem]">
+        <Link href="/login" className="w-full lg:w-[30rem]">
+          <button className="bg-green-600 p-3 text-white rounded-lg w-full">
             Login
           </button>
         </Link>
-        <Link href="/register" className="w-full">
-          <button className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]">
+        <Link href="/register" className="w-full lg:w-[30rem]">
+          <button className="border-2 border-green-600 rounded-lg p-3 w-full">
             Register
           </button>
         </Link>
