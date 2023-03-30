@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Navbar } from "@/components/Navbar";
 import styles from "@/styles/Home.module.css";
 
 
@@ -18,6 +19,7 @@ const profile = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <main>
       <div className="">
 
         <Image src="/alarm.svg" alt="alarm" width={24} height={24} className="ml-[348px] mt-[78px] "/>
@@ -50,6 +52,8 @@ const profile = () => {
         </button>
         </Link>
       </div>
+      <Navbar />
+      </main>
     </>
   );
 };
