@@ -4,6 +4,7 @@ import React from "react";
 import styles from "@/styles/Home.module.css";
 import { Navbar } from "@/components/Navbar";
 import { FoodItem } from "@/components/FoodItem";
+import Image from "next/image";
 
 const kitchen = () => {
   return (
@@ -17,9 +18,10 @@ const kitchen = () => {
       <main
         className={`${styles.main} px-2 max-h-screen lg:w-[30rem] mt-[1rem]`}
       >
-        <h2 className="text-left mt-[3rem] w-full text-xl mb-[2rem]">
-          Welcome, Sandra
-        </h2>
+        <div className="flex justify-end mt-[3rem] w-full">
+          <Image src="/alarm.svg" alt="alarm bell" width={20} height={20} />
+        </div>
+        <h2 className="text-left w-full text-xl mb-[2rem]">Welcome, Sandra</h2>
         <input
           className={`ring-1 ring-black rounded-lg py-2 px-9 w-full mb-6 ${styles.search}`}
           type="search"
