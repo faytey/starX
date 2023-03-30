@@ -14,8 +14,10 @@ const kitchen = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} px-2 max-h-screen lg:w-[30rem]`}>
-        <h2 className="text-left mt-[3rem] w-full text-xl mb-4">
+      <main
+        className={`${styles.main} px-2 max-h-screen lg:w-[30rem] mt-[1rem]`}
+      >
+        <h2 className="text-left mt-[3rem] w-full text-xl mb-[2rem]">
           Welcome, Sandra
         </h2>
         <input

@@ -1,7 +1,8 @@
 import { dataSet } from "@/components/FoodItem";
 import { PageLayout } from "@/layout/PageLayout";
+import styles from "@/styles/Home.module.css";
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -17,17 +18,29 @@ const Ticket = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PageLayout url="userhome" text="Order Successful">
-        <div>
-          <p>Here is your Meal Ticket</p>
-          <Image
-            src={`/${data?.src}`}
-            alt="ordered meal"
-            width={50}
-            height={50}
-          />
-          <p>{data?.text}</p>
+      <PageLayout url="userhome" text="">
+        <div className={`${styles.card} mt-[3rem] mx-6 p-3`}>
+          <h1 className="text-center my-4">Meal Ticket</h1>
+          <div className="flex flex-col h-[12rem] justify-evenly">
+            <div className="flex justify-between">
+              <p>Date: 28th March, 2023</p>
+              <p>Time: 12:10pm</p>
+            </div>
+            <p>Meal: {data?.text}</p>
+            <p>Cost: Company</p>
+            <p>
+              Status: <span className="text-green-600">Successful</span>
+            </p>
+          </div>
         </div>
+        <Link
+          href="/userhome"
+          className="w-full text-center flex justify-center mt-[6rem]"
+        >
+          <button className="text-white bg-green-500 rounded-lg py-4 px-[5rem] shadow-xl text-lg">
+            Done
+          </button>
+        </Link>
       </PageLayout>
     </>
   );

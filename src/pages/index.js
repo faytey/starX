@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
 
-        <div className={`${styles.center} px-0`}>
+        <div className={`${styles.center} px-0 mb-10`}>
           <Image
             src="/undraw_eating_together_re_ux62 (1).png"
             alt="StarX Hero Image"
@@ -35,13 +35,13 @@ export default function Home() {
             priority
           />
         </div>
-        <Link href="/login" className="w-full lg:w-[30rem]">
-          <button className="bg-green-600 p-3 text-white rounded-lg w-full">
+        <Link href="/login" className="w-full lg:w-[30rem] mb-8">
+          <button className="bg-[#428837] p-3 text-white rounded-lg w-full">
             Login
           </button>
         </Link>
         <Link href="/register" className="w-full lg:w-[30rem]">
-          <button className="border-2 border-green-600 rounded-lg p-3 w-full">
+          <button className="border-2 border-[#428837] rounded-lg p-3 w-full">
             Register
           </button>
         </Link>

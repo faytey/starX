@@ -25,7 +25,7 @@ export const List = () => {
     },
   ];
   return (
-    <div>
+    <div className="mt-[3rem]">
       {dataSet.map((data) => {
         return (
           <div

@@ -5,13 +5,12 @@ import Link from "next/link";
 import React from "react";
 import { Navbar } from "@/components/Navbar";
 import styles from "@/styles/Home.module.css";
-
+import { PageLayout } from "@/layout/PageLayout";
 
 const profile = () => {
-
   //const [image, setImage] = useState(null);
   //const {user, loading} = useFetchUser();
-       return (
+  return (
     <>
       <Head>
         <title>StarX | Profile</title>
@@ -20,39 +19,38 @@ const profile = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-      <div className="">
-
-        <Image src="/alarm.svg" alt="alarm" width={24} height={24} className="ml-[348px] mt-[78px] "/>
-        <h3 className=" font-normal font-serif text-2xl ml-[40px] top-[111px] w-[79px] h-[29px]">Profile</h3>
-        
-        <div className="flex gap-10 mt-9 ">
-        
-
+        <PageLayout url="history" text="Profile">
           <div className="">
-            <Image
-              src="/duns.jpg"
-              alt="profile01"
-              width={101.42}
-              height={101.42}
-              className="rounded-full ml-9 left-[20px] top-[164px]  "
-            />
-          </div>
-          <div className="mt-6">
-            <div className="mt-4 font-semibold text-lg">
-            <h4>Faith M. Roberts</h4>
+            <div className="flex justify-end mr-6">
+              <Image src="/alarm.svg" alt="alarm" width={20} height={20} />
             </div>
-            <div>
-            <h6>7864FJI</h6>
+
+            <div className="flex gap-6 mt-4 items-start">
+              <div className="">
+                <Image
+                  src="/duns.jpg"
+                  alt="profile01"
+                  width={101.42}
+                  height={101.42}
+                  className="rounded-full ml-5 left-[20px] top-[164px] border-2 border-[#428837]"
+                />
+              </div>
+              <div className="">
+                <div className="mt-4 font-semibold text-lg">
+                  <h4>Faith M. Roberts</h4>
+                </div>
+                <div>
+                  <h6>7864FJI</h6>
+                </div>
+              </div>
             </div>
+            <Link href="/changePicture">
+              <button className="bg-[#428837] mt-6 ml-28 rounded-lg h-12 px-8 w-140 shadow-xl text-white">
+                Edit Profile
+              </button>
+            </Link>
           </div>
-        </div>
-        <Link href="/changePicture">
-        <button className="bg-green-400 mt-6 ml-28 rounded-lg h-12 px-8 w-140">
-            Edit Profile
-        </button>
-        </Link>
-      </div>
-      <Navbar />
+        </PageLayout>
       </main>
     </>
   );

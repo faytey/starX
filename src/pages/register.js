@@ -14,37 +14,37 @@ const register = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={`${styles.center} pt-[2rem]`}>
+        <div className={`${styles.center} pt-[2rem] my-10`}>
           <Image
-            src="/StarXstarXlogo.svg"
+            src="/undraw_breakfast_psiw (1) 1.svg"
             alt="StarX Logo"
-            width={180}
-            height={37}
+            width={380}
+            height={50}
             priority
           />
         </div>
-
+        <h1 className="text-2xl text-center">Sign Up</h1>
         <input
           type="text"
-          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
+          className="border-2 border-[#428837] rounded-lg p-3 w-full lg:w-[30rem]"
           placeholder="Name"
         />
 
         <input
           type="number"
-          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
+          className="border-2 border-[#428837] rounded-lg p-3 w-full lg:w-[30rem]"
           placeholder="Employee Id Number"
         />
 
         <input
           type="password"
-          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
+          className="border-2 border-[#428837] rounded-lg p-3 w-full lg:w-[30rem]"
           placeholder="Password"
         />
 
         <input
           type="password"
-          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
+          className="border-2 border-[#428837] rounded-lg p-3 w-full lg:w-[30rem]"
           placeholder="Confirm Password"
         />
         <Link href="/userhome" className="w-full lg:w-[30rem]">

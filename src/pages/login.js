@@ -14,7 +14,7 @@ const login = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={`${styles.center} pt-[2rem]`}>
+        <div className={`${styles.center} pt-[2rem] mb-10`}>
           <Image
             src="/StarXstarXlogo.svg"
             alt="StarX Logo"
@@ -24,9 +24,9 @@ const login = () => {
           />
         </div>
 
-        <div className={`${styles.center} px-0`}>
+        <div className={`${styles.center} px-0 my-10`}>
           <Image
-            src="/undraw_eating_together_re_ux62 (1).png"
+            src="/undraw_breakfast_psiw (1) 1.svg"
             alt="StarX Hero Image"
             width={400}
             height={300}
@@ -36,14 +36,17 @@ const login = () => {
 
         <input
           type="text"
-          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
+          className="border-2 border-[#428837] rounded-lg p-3 w-full lg:w-[30rem] mb-2"
           placeholder="Id Number"
         />
         <input
           type="password"
-          className="border-2 border-green-600 rounded-lg p-3 w-full lg:w-[30rem]"
+          className="border-2 border-[#428837] rounded-lg p-3 w-full lg:w-[30rem] mb-[-0.5rem]"
           placeholder="Password"
         />
+        <Link href="#" className="m-0 text-right w-full lg:w-[30rem] text-sm">
+          Forgot Password?
+        </Link>
         <Link href="/userhome" className="w-full lg:w-[30rem]">
           <button className="bg-gray-300 border-2 border-gray-400 rounded-lg p-3 w-full lg:w-[30rem]">
             Login

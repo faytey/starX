@@ -20,8 +20,10 @@ const Order = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PageLayout url="userhome" text="My Order">
-        <div className={`${styles.card} p-4 m-4 flex flex-col gap-4`}>
-          <div className="flex justify-between items-start">
+        <div
+          className={`${styles.card} p-4 mx-4 mt-[3rem] flex flex-col gap-4 justify-around`}
+        >
+          <div className="flex justify-between items-start h-[4rem]">
             <div className="flex gap-4">
               <Image
                 src={`/${data?.src}`}
@@ -40,14 +42,17 @@ const Order = () => {
           </div>
           <div className="flex justify-center items-center gap-2">
             <Image src="/Vector (1).svg" alt="icon" width={20} height={20} />
-            <span>30mins</span>
+            <span>30mins to prepare</span>
           </div>
-          <Link href={`/ticket/${data?.id}`} className="w-full text-center">
-            <button className="border-2 border-gray-500 rounded-sm py-2 px-6">
-              Get Ticket
-            </button>
-          </Link>
         </div>
+        <Link
+          href={`/ticket/${data?.id}`}
+          className="w-full text-center flex justify-center mt-[6rem]"
+        >
+          <button className="border-2 border-gray-500 rounded-lg py-4 px-[3rem] shadow-xl text-lg">
+            Get Meal Ticket
+          </button>
+        </Link>
       </PageLayout>
     </>
   );
