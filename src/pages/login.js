@@ -47,7 +47,7 @@ const login = () => {
         <Link href="#" className="m-0 text-right w-full lg:w-[30rem] text-sm">
           Forgot Password?
         </Link>
-        <Link href="/userhome" className="w-full lg:w-[30rem]">
+        <Link href="/userhome" className="w-full lg:w-[30rem] mb-2">
           <button className="bg-gray-300 border-2 border-gray-400 rounded-lg p-3 w-full lg:w-[30rem]">
             Login
           </button>

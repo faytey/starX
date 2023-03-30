@@ -47,7 +47,7 @@ const register = () => {
           className="border-2 border-[#428837] rounded-lg p-3 w-full lg:w-[30rem]"
           placeholder="Confirm Password"
         />
-        <Link href="/userhome" className="w-full lg:w-[30rem]">
+        <Link href="/userhome" className="w-full lg:w-[30rem] mb-2">
           <button className="bg-gray-300 border-2 border-gray-400 rounded-lg p-3 w-full lg:w-[30rem]">
             Register
           </button>
