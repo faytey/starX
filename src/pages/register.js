@@ -14,7 +14,7 @@ const register = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={`${styles.center} pt-[2rem] my-10`}>
+        <div className={`${styles.center} pt-[2rem] my-10 lg:my-0 lg:pt-2`}>
           <Image
             src="/undraw_breakfast_psiw (1) 1.svg"
             alt="StarX Logo"
