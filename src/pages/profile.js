@@ -18,15 +18,30 @@ const profile = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <PageLayout url="history" text="Profile">
-          <div className="">
-            <div className="flex justify-end mr-6">
+      <main className="lg:w-[30rem] mx-auto">
+        <div>
+          <div className="flex flex-col gap-6 mt-4 items-start">
+            <Link href="/userhome">
+              <div className="flex items-center mt-[2rem] px-2">
+                <span>
+                  <Image
+                    src="/Vector.svg"
+                    alt="back-arrow"
+                    width={24}
+                    height={24}
+                  />
+                </span>
+                <span>Back</span>
+              </div>
+            </Link>
+            <div className="flex justify-end w-full mt-[-1.5rem] pr-2">
               <Image src="/alarm.svg" alt="alarm" width={20} height={20} />
             </div>
-
-            <div className="flex gap-6 mt-4 items-start">
-              <div className="">
+            <h1 className="text-xl w-full text-left px-4 mb-2 mt-[-1.5rem]">
+              Profile
+            </h1>
+            <div className="flex gap-6">
+              <div>
                 <Image
                   src="/duns.jpg"
                   alt="profile01"
@@ -44,13 +59,14 @@ const profile = () => {
                 </div>
               </div>
             </div>
-            <Link href="/changePicture">
-              <button className="bg-[#428837] mt-6 ml-28 rounded-lg h-12 px-8 w-140 shadow-xl text-white">
-                Edit Profile
-              </button>
-            </Link>
           </div>
-        </PageLayout>
+          <Link href="#">
+            <button className="bg-[#428837] mt-6 ml-28 rounded-lg h-12 px-8 w-140 shadow-xl text-white">
+              Edit Profile
+            </button>
+          </Link>
+        </div>
+        <Navbar />
       </main>
     </>
   );
