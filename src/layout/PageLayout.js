@@ -16,7 +16,7 @@ export const PageLayout = ({ children, url, text }) => {
       </Link>
       <h1 className="text-xl w-full text-left px-2 mb-2">{text}</h1>
       <main>{children}</main>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center px-2">
         <Navbar />
       </div>
     </div>
